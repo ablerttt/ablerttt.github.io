@@ -1,0 +1,44 @@
+body {
+    background: #cde5f7;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    /* background-color: #333; */
+    background-color: Gainsboro;
+}
+
+li {
+    font-family: 'Roboto';
+    font-weight:300px;
+    float: left;
+    margin: 0px 15px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+h1 {
+    font-family:'Roboto';
+    font-weight: 700px;
+    margin: 50px;
+}
+
+p {
+    font-family:'Roboto';
+    font-weight: 500px;
+    margin: 30px;
+}
