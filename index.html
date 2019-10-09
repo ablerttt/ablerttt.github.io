@@ -5,18 +5,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
     <title>Albert Han</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="navitem" >
+        <a href="#about">About</a>
+        <a href="#">Resume</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()" style="font-size: 50px">&#9776;</span>
+
+    <div id="main" class="wrapper">
       <img src="profile.jpg" alt="Albert Han" class="profimg">
       <h1>Hi! I'm Albert Han.</h1>
       <p>I'm a Computer Science major at UCLA.</p>
 
       <p>I am passionate about the design and visual aspect of computer science, including UI/UX and frontend web development.</p>
+
+      <ul class="links list-group-horizontal-md">
+        <li id="Linkedin"><a href="https://www.linkedin.com/in/alberthan00/">LinkedIn</a></li>
+        <li id="Resume"><a href="https://docs.google.com/document/d/1wlxVQOpweP3KAHbLOI4yZU_0hkET4NrIlXcPPe26OBI/preview">Resume</a></li>
+        <li id="Instagram"><a href="https://www.instagram.com/ablerttttt">Instagram</a></li>
+        <li id="Email"><a href="mailto:alberthan2011@gmail.com">Email</a></li>
+      </ul>
+    </div>
+
+    <div id="about" class="wrapper">
+      <p>Hello!!!!</p>
     </div>
   </body>
   <footer>
   </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+  </script>
 </html>
+
