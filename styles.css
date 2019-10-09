@@ -15,10 +15,13 @@ body {
 	position: absolute;
 	cursor: pointer; 
 	font-size: 50px;
-	background-color: rgba(245, 245, 245, 40%);
 	padding: 5px 15px 5px 15px;
 	border-radius: 10px;
 	margin: 10px 0px 0px 10px;
+}
+
+.open-item:hover{
+	background-color: rgba(245, 245, 245, 40%);
 }
 
 .wrapper {
@@ -64,26 +67,80 @@ body {
 	li {
 		padding: 6px 6px;
 	}
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-	.wrapper {
-		width: 65%;
+	.contact-large-screen{
+		display: none;
 	}
 
-	li {
-		padding: 9px 9px;
+	.contact-smaller-screen{
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px){
+	.content {
+		margin-top: 10%;
+	}
+
+	h1{
+		font-size: 40px;
+	}
+
+	p{
+		font-size: 36px;
+	}
+
+	ul.links{
+		width: 100%;
+	}
+
+	.links li{
+		font-size: 30px;
+		padding: 30px 10px 30px 10px;
 		font-family: Roboto;
-		font-weight: 500px;
 		text-align: center;
 		float: left;
 		margin: auto;
 		position: relative;
 		text-decoration: none;
+		margin: 0px 10px 10px 0px;
+	}
+
+	.wrapper {
+		position: absolute;
+		margin: auto;
+		width: 75%;
+		height: 80%;
+		background: rgba(255, 255, 255, 0.4);
+		border-radius: 20px;
+		z-index: -1;
+	}
+
+	.contact-large-screen{
+		display: none;
 	}
 }
 
+@media only screen and (max-width: 900px) {
+	.content{
+		margin-top: 8%;
+	}
+
+	h1{
+		font-size: 30px;
+	}
+
+	p{
+		font-size: 20px;
+	}
+
+	.links li {
+		width: 20%;
+		height: 40%;
+		margin: auto;
+		padding: 60px 5px 30px 5px;
+	}
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
@@ -105,11 +162,27 @@ body {
 
 	li {
 		padding: 15px 15px;
+		margin: 10px;
 	}
 
-	a:hover{
-		color: MidnightBlue;
+	.contact-large-screen a{
+		padding: 10px 10px 10px 10px;
+	}
+
+	.contact-large-screen a:hover{
+		color: MediumBlue;
+		background-color: SteelBlue;
+		padding: 10px 10px 10px 10px;
+		border-radius: 3px;
 		text-decoration: underline;
+	}
+
+	.contact-smaller-screen{
+		display: none;
+	}
+
+	ul.links{
+		width: 70%;
 	}
 }
 
@@ -136,19 +209,17 @@ p {
 }
 
 ul.links {
-	width: 50%;
 	list-style: none;
 	margin: auto;
 	display: flex;
 	justify-content: center;
-	padding:0;
 	color: black;
-
+	padding: 0;
 }
 
 li {
 	font-family: Roboto;
-	font-weight: 500px;
+	font-weight: 500;
 	text-align: center;
 	float: left;
 	margin: auto;
@@ -161,8 +232,6 @@ a {
 	text-decoration: none;
 }
 
-
-
 /* The side navigation menu */
 .sidenav {
 	height: 100%; /* 100% Full-height */
@@ -171,7 +240,7 @@ a {
 	z-index: 1; /* Stay on top */
 	top: 0; /* Stay at the top */
 	left: 0;
-	background-color: #111; /* Black*/
+	background-color: #222938;
 	overflow-x: hidden; /* Disable horizontal scroll */
 	padding-top: 60px; /* Place content 60px from the top */
 	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -187,19 +256,33 @@ a {
 	transition: 0.3s;
 }
 
+.sidenav .navitem {
+	margin-top: 20px;
+}
+
+.sidenav .navitem a{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav .navitem a:hover {
 	color: #f1f1f1;
+	background-color: LightSlateGrey;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
 	cursor: pointer;
 	position: absolute;
-	top: 0;
-	right: 45px;
-	font-size: 36px;
+	top: 5px;
+	right: 55px;
+	font-size: 50px;
 	margin-left: 50px;
+}
+
+.sidenav .closebtn:hover {
+	color: #f1f1f1;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
