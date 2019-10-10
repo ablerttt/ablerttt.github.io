@@ -1,67 +1,97 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap" rel="stylesheet">
-    <title>Albert Han</title>
-  </head>
-  <body>
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div class="navitem" >
-        <a href="#">About</a>
-        <a href="#">Resume</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-      </div>
-    </div>
-
-    <!-- Use any element to open the sidenav -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Albert Han</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
     <span onclick="openNav()" class="open-item">&#9776;</span>
-
-    <div id="main" class="wrapper">
-      <div class="content">
-        <img src="profile.jpg" alt="Albert Han" class="profimg">
-        <h1>Hi! I'm Albert Han.</h1>
-        <p>I'm a Computer Science major at UCLA.</p>
-
-        <p>I am passionate about the design and visual aspect of computer science, including UI/UX and frontend web development.</p>
-
-        <ul class="links list-group-horizontal-md">
-          <div class="contact-large-screen">
-            <li id="Linkedin"><a href="https://www.linkedin.com/in/alberthan00/" target="_blank">LinkedIn</a></li>
-            <li id="Resume"><a href="https://docs.google.com/document/d/1wlxVQOpweP3KAHbLOI4yZU_0hkET4NrIlXcPPe26OBI/preview" target="_blank">Resume</a></li>
-            <li id="Instagram"><a href="https://www.instagram.com/ablerttttt" target="_blank">Instagram</a></li>
-            <li id="Github"><a href="https://github.com/ablerttt/" target="_blank">Github</a></li>  
-            <li id="Email"><a href="mailto:alberthan2011@gmail.com" target="_blank">Email</a></li>
-          </div>
-          <div class="contact-smaller-screen">
-            <li id="Linkedin"><a href="https://www.linkedin.com/in/alberthan00/" target="_blank"><img src="https://image.flaticon.com/icons/svg/1419/1419518.svg" alt="Linkedin" height="80" width="80"></a></li>
-            <li id="Resume"><a href="https://docs.google.com/document/d/1wlxVQOpweP3KAHbLOI4yZU_0hkET4NrIlXcPPe26OBI/preview" target="_blank"><img src="https://icon-library.net/images/download-resume-icon/download-resume-icon-0.jpg" alt="Resume" height="80" width="80"></a></li>
-            <li id="Instagram"><a href="https://www.instagram.com/ablerttttt" target="_blank"><img src="https://image.flaticon.com/icons/svg/87/87390.svg" alt="Instagram" height="80" width="80" ></a></li>
-            <li id="Github"><a href="https://github.com/ablerttt/" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25657.svg" alt="Github" height="80" width="80"></a></li>  
-            <li id="Email"><a href="mailto:alberthan2011@gmail.com" target="_blank"><img src="https://image.flaticon.com/icons/svg/83/83968.svg" alt="Mail" height="80" width="80"></a></li>
-          </div>
-        </ul>
+    <section id="home">
+      <div class="wrapper">
+        <div class="child">
+          <br class="smaller-show">
+          <img src="profile.jpg" alt="Albert Han" class="profimg">
+          <br>
+          <h1 class="larger-show">Hi! I'm Albert Han.</h1>
+          <h1 class="smaller-show">Hi! I'm Albert.</h1>
+          <br>
+          <p>I'm a Computer Science major at UCLA.</p>
+          <br>
+          <p>Scroll down to learn more about me!</p>
+        </div>
       </div>
-    </div>
-
-
-  </body>
-  <footer>
-  </footer>
-
-  <script>
+    </section>
+    <section id="about">
+      <div class="wrapper">
+        <br class="larger-show">
+        <h1>A little about me</h1>
+        <br>
+        <br class="larger-show">
+        <br class="larger-show">
+        <div class="left-align">
+          <p>I'm a second year studying computer science at UCLA. I'm interested in the visual and design aspect of computer science, including frontend web design, UI/UX, and computer graphics. I love to work on projects and try out new technologies (see <a href="#resume">skills</a>).</p>
+          <br>
+          <p>Outside of computer science, my hobbies include doing graphic design, listening to music, and trying out new types of cuisine. I also like to watch professional cooking shows while frying an egg, pretending that I'm actually good at cooking. Or, I'll watch Masterchef while eating instant noodles.</p>
+        </div>
+      </div>
+    </section>
+    <section id="resume">
+      <div class="wrapper">
+        <h1>Resume</h1>
+        <br class="larger-show">
+        <iframe src="resumefile.pdf #toolbar=0" width="80%" height="400px"></iframe>
+        <p><i>If you can't see the file, click <a href="resumefile.pdf" target="_blank">here</a>.</i></p>
+        <br><br>
+        <h3>Technical Skills</h3>
+        <br>
+        <div class="left-align skills">
+        <p><strong>Coding Languages and Technologies: </strong>C++, Java, JavaScript, React.JS, HTML, CSS</p>
+        <p><strong>Experience With: </strong>Linux, Bash, Figma, Graphic Design</p>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="wrapper">
+        <h1>Projects</h1>
+        <br>
+        <br class="larger-show">
+        <br class="larger-show">
+        <br class="larger-show">
+        <br class="larger-show">
+        <h2>Work in progress!</h2>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="wrapper">
+        <h1>Contact</h1>
+        <br>
+        <br class="larger-show">
+        <br class="larger-show">
+      </div>
+    </section>
+    <nav id="mysidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="navitem">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</body>
+<script>
     function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("mysidenav").style.width = "250px";
     }
 
     function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("mysidenav").style.width = "0";
     }
-  </script>
+</script>
 </html>
-
