@@ -109,7 +109,6 @@ section .mid-weight {
 
 #resume {
     background-color: #9dcae0;
-
 }
 
 #resume .wrapper {
@@ -213,6 +212,40 @@ section .mid-weight {
 	}
 }
 
+#contact .wrapper{
+    width: 50%;
+    height: 60%;
+}
+
+.child{
+    align-content: center;
+    justify-content: center;
+    vertical-align: center;
+}
+
+#contact ul {
+    list-style: none;
+    font-size: 2em;
+}
+
+#contact img{
+    position: relative;
+    vertical-align: middle;
+    height: 1.5em;
+    z-index: 2;
+    padding: 15px;
+}
+
+
+#contact a:hover{
+/*    background-color: CadetBlue;
+    z-index: -1;
+    opacity: 0.1;*/
+    border: 5px solid SkyBlue;
+    border-radius: 10px;
+    padding: 15px 10px;
+}
+
 
 /*
 Things to change for MEDIA:
@@ -238,6 +271,12 @@ Things to change for MEDIA:
         height: 80%;
     }
 
+    .child{
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+    }
+
     #home h1{
     	font-size: 2em;
     }
@@ -255,13 +294,17 @@ Things to change for MEDIA:
     	justify-content: center;
     }
 
+    #resume{
+        height: 120%;
+    }
+
     #resume p{
     	font-size: 1rem;
     }
 
     #resume iframe
     {
-    	height: 150px;
+    	height: 200px;
     }
 
     .larger-show {
@@ -286,14 +329,21 @@ Things to change for MEDIA:
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 331px) and (max-width: 600px) {
     .profimg {
-        margin-top: 10%;
-        width: 70%;
+        width: 60%;
         height: auto;
+        justify-content: center;
+        margin: auto;
     }
 
     .wrapper {
         width: 80%;
         height: 70%;
+    }
+
+    .child{
+        justify-content: center;
+        text-align: center;
+        align-content: center;
     }
 
     #home p{
@@ -305,12 +355,22 @@ Things to change for MEDIA:
     }
 
     #about p{
-    	font-size: 1em;
+    	font-size: 1.2em;
     	justify-content: center;
     }
 
+    #resume{
+        height: 130%;
+    }
+
     #resume p{
-    	font-size: 1rem;
+    	font-size: 1.2rem;
+        margin: 10px auto;
+    }
+
+    #resume iframe{
+        width: 80%
+        height: 300px;
     }
 
     .larger-show {
@@ -337,10 +397,18 @@ Things to change for MEDIA:
     .wrapper {
         width: 60%;
         height: 60%;
+        justify-content: center;
+        margin: auto;
+    }
+
+
+    .child{
+        justify-content: center;
+        text-align: center;
+        align-content: center;
     }
 
     .profimg {
-        margin-top: 40%;
         width: 50%;
         height: auto;
     }
@@ -369,11 +437,19 @@ Things to change for MEDIA:
     .wrapper {
         width: 60%;
         height: 60%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .child{
+        justify-content: center;
+        text-align: center;
+        align-content: center;
     }
 
     .profimg {
-        margin-top: 5%;
-        width: 60%;
+        width: 50%;
         height: auto;
     }
 
@@ -385,13 +461,8 @@ Things to change for MEDIA:
     	font-size: 1.5rem;
     }
 
-    #about p{
-    	font-size: 1.5rem;
-    }
-
-    #resume p
-    {
-    	font-size: 1.5rem;
+    #resume{
+        height: 120%;
     }
 
     .larger-show {
@@ -413,14 +484,21 @@ Things to change for MEDIA:
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .wrapper {
-        width: 70%;
-        height: 60%;
+        width: 60%;
+        height: 50%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
     }
 
     .profimg {
-        margin-top: 20%;
         width: 50%;
         height: auto;
+    }
+
+    .child{
+        align-content: center;
+        justify-content: center;
     }
 
     #home h1 {
@@ -431,9 +509,12 @@ Things to change for MEDIA:
         font-size: 2rem;
     }
 
-    #about h1 {
-        font-size: 3rem;
-        margin-bottom: 5px;
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #about {
+        height: 110%;
     }
 
     #resume .wrapper{
@@ -484,6 +565,12 @@ Things to change for MEDIA:
         display: inline-block;
         justify-content: center;
         text-align: center;
+    }
+
+    .child{
+        justify-content: center;
+        text-align: center;
+        align-content: center;
     }
 
     #home .wrapper {
