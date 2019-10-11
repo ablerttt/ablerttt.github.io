@@ -242,7 +242,7 @@ section .mid-weight {
     z-index: -1;
     opacity: 0.1;*/
     border: 5px solid SkyBlue;
-    border-radius: 10px;
+    border-radius: 5px;
     padding: 15px 10px;
 }
 
