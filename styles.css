@@ -242,7 +242,7 @@ section .mid-weight {
     z-index: -1;
     opacity: 0.1;*/
     border: 5px solid SkyBlue;
-    border-radius: 5px;
+    border-radius: 5    px;
     padding: 15px 10px;
 }
 
@@ -413,6 +413,10 @@ Things to change for MEDIA:
         height: auto;
     }
 
+    #resume {
+        height: 120%;
+    }
+
     .larger-show {
         display: none;
     }
@@ -453,6 +457,10 @@ Things to change for MEDIA:
         height: auto;
     }
 
+    #home .wrapper{
+        height: 75%;
+    }
+
     #home h1{
     	font-size: 3rem;
     }
@@ -484,8 +492,8 @@ Things to change for MEDIA:
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
     .wrapper {
-        width: 60%;
-        height: 50%;
+        width: 68%;
+        height: 80%;
         margin: auto;
         align-items: center;
         justify-content: center;
@@ -502,11 +510,11 @@ Things to change for MEDIA:
     }
 
     #home h1 {
-        font-size: 4rem;
+        font-size: 2.8rem;
     }
 
     #home p {
-        font-size: 2rem;
+        font-size: 1.5em;
     }
 
     h1 {
@@ -515,6 +523,29 @@ Things to change for MEDIA:
 
     #about {
         height: 110%;
+    }
+
+    #about p {
+        font-size: 1.7rem;
+    }
+
+    #resume{
+        height: 140%;
+    }
+
+    #resume iframe{
+        height: 500px;
+    }
+
+    #resume p{
+        font-size: 1.5rem;
+        margin: auto 15px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #resume h3{
+        font-size: 2rem;
     }
 
     #resume .wrapper{
@@ -544,18 +575,15 @@ Things to change for MEDIA:
         margin: 10px 0px 0px 10px;
     }
 
-    iframe {
-        height: 700px !important;
-    }
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .profimg {
+        position: relative;
         margin: 5% auto 3% auto;
         justify-content: center;
-        width: 240px;
+        width: 60%;
         height: auto;
     }
 
@@ -590,6 +618,10 @@ Things to change for MEDIA:
         margin-right: auto;
     }
 
+    #resume {
+        height: 150%;
+    }
+
     #resume .wrapper{
     	height: 85%;
     }
@@ -607,6 +639,10 @@ Things to change for MEDIA:
 
     #resume .skills{
     	margin-left: 8%;
+    }
+
+    #resume iframe{
+        height: 60%;
     }
 
     .smaller-show {
