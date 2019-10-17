@@ -5,10 +5,15 @@
 
 body {
     font-family: 'Roboto';
+    background-color: MidnightBlue;
     font-weight: 300;
-    background: MidnightBlue;
     color: #000;
     height: 100vh;
+    overflow: hidden;
+}
+
+.img-wrapper{
+    display:inline-block;
     overflow: hidden;
 }
 
@@ -29,6 +34,7 @@ body {
     padding: 20px 20px 20px 20px;
     opacity: 40%;
     z-index: 0;
+    overflow: hidden;
 }
 
 section {
@@ -68,7 +74,7 @@ section h1 {
 
 section h2 {
     font-size: 2rem;
-
+    font-weight: 300;
 }
 
 section h3 {
@@ -98,17 +104,20 @@ section .mid-weight {
 }
 
 #home {
-    background-color: #9dcae0;
+    /*background-color: #9dcae0;*/
+    background-color: #d6f2ff;
 
 }
 
 #about {
-    background-color: #7da3d1;
+    /*background-color: #7da3d1;*/
+    background-color: #adc3de;
 
 }
 
 #resume {
-    background-color: #9dcae0;
+    /*background-color: #9dcae0;*/
+    background-color: #d6f2ff;
 }
 
 #resume .wrapper {
@@ -117,12 +126,14 @@ section .mid-weight {
 }
 
 #projects {
-    background-color: #7da3d1;
+    /*background-color: #7da3d1;*/
+    background-color: #adc3de;
 
 }
 
 #contact {
-    background-color: #9dcae0;
+    /*background-color: #9dcae0;*/
+    background-color: #d6f2ff;
 
 }
 
@@ -364,13 +375,13 @@ Things to change for MEDIA:
     }
 
     #resume p{
-    	font-size: 1.2rem;
+    	font-size: 1em;
         margin: 10px auto;
     }
 
     #resume iframe{
-        width: 80%
-        height: 300px;
+        height: 40%;
+        
     }
 
     .larger-show {
@@ -469,8 +480,13 @@ Things to change for MEDIA:
     	font-size: 1.5rem;
     }
 
-    #resume{
+/*    #resume{
         height: 120%;
+    }*/
+
+    #resume iframe{
+        height: 50%;
+        width: 90f%;
     }
 
     .larger-show {
