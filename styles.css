@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Roboto';
-    background-color: MidnightBlue;
+    /*background-color: MidnightBlue;*/
     font-weight: 300;
     color: #000;
     height: 100vh;
@@ -32,7 +32,6 @@ body {
     border-radius: 20px;
     margin: auto;
     padding: 20px 20px 20px 20px;
-    opacity: 40%;
     z-index: 0;
     overflow: hidden;
 }
@@ -103,37 +102,33 @@ section .mid-weight {
 
 }
 
-#home {
-    /*background-color: #9dcae0;*/
+/*#home {
     background-color: #d6f2ff;
 
 }
 
 #about {
-    /*background-color: #7da3d1;*/
     background-color: #adc3de;
 
 }
 
 #resume {
-    /*background-color: #9dcae0;*/
     background-color: #d6f2ff;
 }
 
-#resume .wrapper {
-    height: 80%;
-
-}
 
 #projects {
-    /*background-color: #7da3d1;*/
     background-color: #adc3de;
 
 }
 
 #contact {
-    /*background-color: #9dcae0;*/
     background-color: #d6f2ff;
+
+}
+*/
+#resume .wrapper {
+    height: 80%;
 
 }
 
@@ -258,14 +253,6 @@ section .mid-weight {
 }
 
 
-/*
-Things to change for MEDIA:
-
--size of the image on home and about
--width of wrapper
--font-size?
-
-*/
 
 
 /*Extremely small screens, namely iPhone 5/SE*/
