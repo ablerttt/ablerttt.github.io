@@ -10061,7 +10061,8 @@ a.text-dark:hover {
     left: 0;
     transition: all .2s ease-in-out;
     opacity: 0;
-    background-color: rgba(26, 188, 156, .9)
+    background-color: rgba(0, 0, 0, .9) 
+    /*change here!!!!*/
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
